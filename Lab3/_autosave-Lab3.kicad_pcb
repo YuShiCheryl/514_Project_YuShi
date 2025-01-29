@@ -1,0 +1,1761 @@
+(kicad_pcb
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(layers
+		(0 "F.Cu" signal)
+		(31 "B.Cu" signal)
+		(32 "B.Adhes" user "B.Adhesive")
+		(33 "F.Adhes" user "F.Adhesive")
+		(34 "B.Paste" user)
+		(35 "F.Paste" user)
+		(36 "B.SilkS" user "B.Silkscreen")
+		(37 "F.SilkS" user "F.Silkscreen")
+		(38 "B.Mask" user)
+		(39 "F.Mask" user)
+		(40 "Dwgs.User" user "User.Drawings")
+		(41 "Cmts.User" user "User.Comments")
+		(42 "Eco1.User" user "User.Eco1")
+		(43 "Eco2.User" user "User.Eco2")
+		(44 "Edge.Cuts" user)
+		(45 "Margin" user)
+		(46 "B.CrtYd" user "B.Courtyard")
+		(47 "F.CrtYd" user "F.Courtyard")
+		(48 "B.Fab" user)
+		(49 "F.Fab" user)
+		(50 "User.1" user)
+		(51 "User.2" user)
+		(52 "User.3" user)
+		(53 "User.4" user)
+		(54 "User.5" user)
+		(55 "User.6" user)
+		(56 "User.7" user)
+		(57 "User.8" user)
+		(58 "User.9" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0)
+		(allow_soldermask_bridges_in_footprints no)
+		(pcbplotparams
+			(layerselection 0x00010fc_ffffffff)
+			(plot_on_all_layers_selection 0x0000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12.000000)
+			(dashed_line_gap_ratio 3.000000)
+			(svgprecision 4)
+			(plotframeref no)
+			(viasonmask no)
+			(mode 1)
+			(useauxorigin no)
+			(hpglpennumber 1)
+			(hpglpenspeed 20)
+			(hpglpendiameter 15.000000)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plotreference yes)
+			(plotvalue yes)
+			(plotfptext yes)
+			(plotinvisibletext no)
+			(sketchpadsonfab no)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(net 0 "")
+	(net 1 "Net-(BT1--)")
+	(net 2 "Net-(BT1-+)")
+	(net 3 "Net-(D1-A)")
+	(net 4 "Net-(D1-K)")
+	(footprint "LED_SMD:LED_Cree-XQ_HandSoldering"
+		(layer "F.Cu")
+		(uuid "3ebc89ee-ae27-4dfb-a4d0-b978539208fb")
+		(at 172.04 105.42)
+		(descr "LED Cree-XQ handsoldering pads http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/XLamp/Data-and-Binning/ds-XQB.pdf")
+		(tags "LED Cree XQ")
+		(property "Reference" "SeeedXIAO1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "0ba8cdc9-f998-4dc7-bf18-2361a2f1c197")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 2 0)
+			(layer "F.Fab")
+			(uuid "f8955d91-8988-44af-863c-c4b809605bd6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_Cree-XQ_HandSoldering"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c90c926-7df5-4209-8565-4e3c0b6248f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf90109b-f409-4dfe-860a-124f6edb20bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "197f7a50-3495-427d-b353-41b9fbcf830f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/b3dc5749-c19d-48af-a7a3-571e7895defb")
+		(sheetname "Root")
+		(sheetfile "Lab3.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1.7 -1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "96cc2eb9-669f-4cbf-b7ff-7577eb17eb62")
+		)
+		(fp_line
+			(start 0.75 -1)
+			(end -1.7 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ac11518c-b1d9-4fa5-a3b1-375845facdf6")
+		)
+		(fp_line
+			(start 0.75 1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5230c90d-dcb4-4da4-87be-d670e1de0018")
+		)
+		(fp_line
+			(start -1.8 -1.1)
+			(end 1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c971c7d1-9639-41a8-ae9b-9331a78a04e4")
+		)
+		(fp_line
+			(start -1.8 1.1)
+			(end -1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2be30d4a-9b29-4a4d-aafc-598a1476e25b")
+		)
+		(fp_line
+			(start 1.8 -1.1)
+			(end 1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a72bbad9-6810-40e8-b268-41c76021863b")
+		)
+		(fp_line
+			(start 1.8 1.1)
+			(end -1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "09d002ea-da39-45fc-8b7c-84794d439971")
+		)
+		(fp_line
+			(start -0.8 -0.8)
+			(end 0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bc137b53-ac2a-4a8d-a9f1-d27d8c28430d")
+		)
+		(fp_line
+			(start -0.8 0.8)
+			(end -0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cda0e54e-9444-4e76-8a13-3b82a2fc7c79")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1ea0fc7b-d769-4735-a5de-9f5fbc71e3da")
+		)
+		(fp_line
+			(start -0.2 -0.2)
+			(end -0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "434e1f2b-24c6-4bcc-828b-9a22c05856ae")
+		)
+		(fp_line
+			(start -0.2 0)
+			(end 0.2 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1ae31d1c-e352-4d53-aa65-fcacb3b2d77f")
+		)
+		(fp_line
+			(start 0.2 -0.2)
+			(end 0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e0d0d30c-783c-4995-a407-14c868117b37")
+		)
+		(fp_line
+			(start 0.2 0.2)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bb6101c3-36ff-4ca0-ae20-2ecb6026ea30")
+		)
+		(fp_line
+			(start 0.6 0)
+			(end 0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6934461a-a279-49b6-a52a-0b6525347ac6")
+		)
+		(fp_line
+			(start 0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e724f96c-5726-4d22-a87a-52872afab72e")
+		)
+		(fp_line
+			(start 0.8 0.8)
+			(end -0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4c46d45f-96fb-4fdb-86aa-9fca622de943")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "12815cbd-7710-4a5e-ab21-9ad0406c98b3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(uuid "86ee2561-7f4f-4446-86d1-b949265553ca")
+		)
+		(pad "2" smd rect
+			(at 0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(uuid "b6a33d27-959a-4f87-a696-f2a6d2d798e2")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_Cree-XQ.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_SMD:LED_Cree-XQ_HandSoldering"
+		(layer "F.Cu")
+		(uuid "55af8ab9-bbb3-4587-b6c2-f7b10d224d10")
+		(at 171.54 66.42)
+		(descr "LED Cree-XQ handsoldering pads http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/XLamp/Data-and-Binning/ds-XQB.pdf")
+		(tags "LED Cree XQ")
+		(property "Reference" "R1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "c0aff127-926a-4e9d-b545-284a568353f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 2 0)
+			(layer "F.Fab")
+			(uuid "680b69d3-6b5b-464a-85f1-976fda604ac5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_Cree-XQ_HandSoldering"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b203b36b-0887-4c97-a4f2-e9a990aa7024")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbe87232-8860-4632-9d47-ba796d98195f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b162c4d-cefc-417a-a15d-d94372be83c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/9e47a17a-400e-46bb-86d3-09413c838f1b")
+		(sheetname "Root")
+		(sheetfile "Lab3.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1.7 -1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0095982f-0e4d-40dd-a3d3-9328a9f85137")
+		)
+		(fp_line
+			(start 0.75 -1)
+			(end -1.7 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8a347b8c-c9a3-4ec6-a282-ba4b56ca95a1")
+		)
+		(fp_line
+			(start 0.75 1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8d7dae24-72f9-43ff-aaa0-e5297ca6c7a1")
+		)
+		(fp_line
+			(start -1.8 -1.1)
+			(end 1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1195bdc0-6cd7-47f2-82d0-f62220943193")
+		)
+		(fp_line
+			(start -1.8 1.1)
+			(end -1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3b3e1fa8-7c44-4275-bac7-7fd71358b2e4")
+		)
+		(fp_line
+			(start 1.8 -1.1)
+			(end 1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2763ae94-cb31-483a-84bc-3c4b6c60ab31")
+		)
+		(fp_line
+			(start 1.8 1.1)
+			(end -1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0e228b5e-0cf1-43c1-b97d-80aa1c337d9e")
+		)
+		(fp_line
+			(start -0.8 -0.8)
+			(end 0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "69ab4f95-72cd-4b91-a10c-3155c80b0048")
+		)
+		(fp_line
+			(start -0.8 0.8)
+			(end -0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c200c25b-efa7-458e-b03a-7473e3ad73c0")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b43ba2a3-a768-48e9-8514-7f6049140cd3")
+		)
+		(fp_line
+			(start -0.2 -0.2)
+			(end -0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "334411e6-8975-43d1-9891-9f1ae5f812d9")
+		)
+		(fp_line
+			(start -0.2 0)
+			(end 0.2 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "882387e5-f974-49a1-8bc7-557880a6da41")
+		)
+		(fp_line
+			(start 0.2 -0.2)
+			(end 0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4f3e49c7-ee22-489e-b2bf-f1cc38be0e74")
+		)
+		(fp_line
+			(start 0.2 0.2)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8ff9eba6-dedc-41b3-84a4-5b49d03b957c")
+		)
+		(fp_line
+			(start 0.6 0)
+			(end 0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d4f76008-c428-4486-9dd7-b17627df7b55")
+		)
+		(fp_line
+			(start 0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4436330c-e1d3-42d9-8d84-fa7027bc6486")
+		)
+		(fp_line
+			(start 0.8 0.8)
+			(end -0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3794a93c-9cde-4203-a3cd-63f3994dfe60")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "7d000f24-78d7-4974-8788-7e77f0e5b8a0")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 4 "Net-(D1-K)")
+			(pintype "passive")
+			(uuid "8e61a031-71c8-47eb-85b2-9ba76f05b262")
+		)
+		(pad "2" smd rect
+			(at 0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 1 "Net-(BT1--)")
+			(pintype "passive")
+			(uuid "41815e15-1037-4611-82ea-879970952ebb")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_Cree-XQ.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_SMD:LED_Cree-XQ_HandSoldering"
+		(layer "F.Cu")
+		(uuid "576e2a14-98d7-433d-a6f2-fba4f66ee64b")
+		(at 125.54 65.42)
+		(descr "LED Cree-XQ handsoldering pads http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/XLamp/Data-and-Binning/ds-XQB.pdf")
+		(tags "LED Cree XQ")
+		(property "Reference" "Humidity1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "8aa1cfa3-4bda-43d5-af94-937fdd6677b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 2 0)
+			(layer "F.Fab")
+			(uuid "bdf5cafd-cefd-43fb-87d7-8f2181a58742")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_Cree-XQ_HandSoldering"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b0f5505-312a-4fb6-8617-72d6f1fa322d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb82e020-a566-4fdb-8759-396baf716ee5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6eda818-85b4-4dde-a69b-0350333d0e0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/bf509b5b-1e9b-4f08-a95b-f801de9f8e5b")
+		(sheetname "Root")
+		(sheetfile "Lab3.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1.7 -1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "63eaf49f-6e8d-456a-9dee-ab5fe587eb98")
+		)
+		(fp_line
+			(start 0.75 -1)
+			(end -1.7 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b206fd77-274a-4d86-ba6b-4529d070d755")
+		)
+		(fp_line
+			(start 0.75 1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bce45cd3-1e98-4402-bb87-03fba881d264")
+		)
+		(fp_line
+			(start -1.8 -1.1)
+			(end 1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9130bc42-c3fd-498c-86e6-511d48a4ad8b")
+		)
+		(fp_line
+			(start -1.8 1.1)
+			(end -1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4ca21c49-fe64-4b39-a583-f65a09a0adb4")
+		)
+		(fp_line
+			(start 1.8 -1.1)
+			(end 1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3f60d85b-09ce-41a0-a909-2b52ce9a2b90")
+		)
+		(fp_line
+			(start 1.8 1.1)
+			(end -1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2921d38e-9103-4d88-8327-2358ab10301e")
+		)
+		(fp_line
+			(start -0.8 -0.8)
+			(end 0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a29b8717-31a2-47de-8cc6-8658f43fcd4c")
+		)
+		(fp_line
+			(start -0.8 0.8)
+			(end -0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "71db476b-789f-49ef-8f1d-61bd8bf1917a")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "902a8163-393f-4f1e-bdf3-436b94097364")
+		)
+		(fp_line
+			(start -0.2 -0.2)
+			(end -0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "293f0fad-90e0-4d4e-8061-f015a3e40cc8")
+		)
+		(fp_line
+			(start -0.2 0)
+			(end 0.2 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3260a51e-8b67-44b0-85f2-cfad7fc70047")
+		)
+		(fp_line
+			(start 0.2 -0.2)
+			(end 0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7bf1ad98-b747-4300-ae7e-72bf7dd23371")
+		)
+		(fp_line
+			(start 0.2 0.2)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bc704a25-35d4-4036-986d-8dba912adf7d")
+		)
+		(fp_line
+			(start 0.6 0)
+			(end 0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a990317f-c112-4151-b631-8a498a01222e")
+		)
+		(fp_line
+			(start 0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1875b222-c202-412f-8050-9b090b3ab300")
+		)
+		(fp_line
+			(start 0.8 0.8)
+			(end -0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "47e4b497-589e-454c-9a28-e60f9679a85e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b06ca364-4f20-4df9-82bc-522346ffdbba")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(uuid "2414c886-a380-4978-8f82-4fef3e23c05d")
+		)
+		(pad "2" smd rect
+			(at 0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(uuid "013ce70f-fdce-4fa9-bea9-dab973c6f03a")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_Cree-XQ.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_SMD:LED_Cree-XQ_HandSoldering"
+		(layer "F.Cu")
+		(uuid "f2d33e54-e302-4af1-bfb7-1992e7a17f15")
+		(at 81.35 108.46)
+		(descr "LED Cree-XQ handsoldering pads http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/XLamp/Data-and-Binning/ds-XQB.pdf")
+		(tags "LED Cree XQ")
+		(property "Reference" "D1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "17cb4141-0f7b-4d91-b5e7-83f41f687a65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 2 0)
+			(layer "F.Fab")
+			(uuid "efab3e3c-18b8-425b-b737-24a8d58d7efa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_Cree-XQ_HandSoldering"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcc1e14b-9847-4a1a-badf-a8fadc79d14d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9305dcd-a7f3-4fbb-b110-588b59ea2bc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "106f815d-8367-4483-8adb-4fbe4ff36e87")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/ed8c406b-5450-4acd-a1e9-852d2673ee59")
+		(sheetname "Root")
+		(sheetfile "Lab3.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1.7 -1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "be9335c0-45f9-4c97-b234-9a7257dda4c0")
+		)
+		(fp_line
+			(start 0.75 -1)
+			(end -1.7 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b24887da-a94e-4f68-b03d-7dc9070ac499")
+		)
+		(fp_line
+			(start 0.75 1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d2db4047-f2af-4b88-a555-d29fe49b963e")
+		)
+		(fp_line
+			(start -1.8 -1.1)
+			(end 1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d7196234-abfe-4013-8259-2f34c0a560c4")
+		)
+		(fp_line
+			(start -1.8 1.1)
+			(end -1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0614c8c5-94fe-41d0-ac9a-98ee749491e3")
+		)
+		(fp_line
+			(start 1.8 -1.1)
+			(end 1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e1bad006-ee50-4144-805f-72123d36e25b")
+		)
+		(fp_line
+			(start 1.8 1.1)
+			(end -1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c1a87bb1-caed-4106-988b-39750c85c5a5")
+		)
+		(fp_line
+			(start -0.8 -0.8)
+			(end 0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "34942c52-abe9-456f-b44b-17c3b5546187")
+		)
+		(fp_line
+			(start -0.8 0.8)
+			(end -0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "344aa1e5-7f8f-4b3c-b4c2-9c5d66e01522")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f1c886ae-1bbe-4295-b192-22dd951bd9ac")
+		)
+		(fp_line
+			(start -0.2 -0.2)
+			(end -0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7bfb099d-6d77-410f-a4bf-e1014362b292")
+		)
+		(fp_line
+			(start -0.2 0)
+			(end 0.2 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "949b5c3e-4205-4917-ae42-bb756e820baf")
+		)
+		(fp_line
+			(start 0.2 -0.2)
+			(end 0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "50afdfaf-1106-4550-b37e-a1dc850734c3")
+		)
+		(fp_line
+			(start 0.2 0.2)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "dd707dc0-e88a-4c75-8130-331158c48e85")
+		)
+		(fp_line
+			(start 0.6 0)
+			(end 0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d08c6a4f-c635-4fb5-bbc2-e6a4f1ad9d73")
+		)
+		(fp_line
+			(start 0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fdba48bd-5672-4d95-bebb-3c2f9c0a761f")
+		)
+		(fp_line
+			(start 0.8 0.8)
+			(end -0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2603b6c7-3496-4f24-9f5d-ea39da5d589c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "4f5e5110-aff6-4a4b-a2e6-8e9690621a8d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 4 "Net-(D1-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "392000e2-64fc-4522-8f48-d965c98746fd")
+		)
+		(pad "2" smd rect
+			(at 0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 3 "Net-(D1-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "ce730296-d1a2-4b4c-9b42-f3c5719bc9e0")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_Cree-XQ.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_SMD:LED_Cree-XQ_HandSoldering"
+		(layer "F.Cu")
+		(uuid "fde0d3c0-da75-4ed5-a9d2-33f0c72bb0c4")
+		(at 80 65.5)
+		(descr "LED Cree-XQ handsoldering pads http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/XLamp/Data-and-Binning/ds-XQB.pdf")
+		(tags "LED Cree XQ")
+		(property "Reference" "BT1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "72c9b611-649b-449a-af68-bc4e3612e0c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 0 2 0)
+			(layer "F.Fab")
+			(uuid "e26fa1e5-4ab6-415e-a1ee-ee221aa40062")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_Cree-XQ_HandSoldering"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ff53b34-115c-4238-8b68-75d0bad948bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65c6ea0b-a157-41ff-93cb-d3a8dd5d4374")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Single-cell battery"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b028ae34-c4e4-41bc-a487-cfcb8a17890c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/1302b8ae-1ada-4c91-abd5-14a94c8c08a5")
+		(sheetname "Root")
+		(sheetfile "Lab3.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1.7 -1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "293d1534-7721-44fe-83a0-ada0fae5ae4a")
+		)
+		(fp_line
+			(start 0.75 -1)
+			(end -1.7 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "da140c44-1e50-454e-bee5-859ac038d1ee")
+		)
+		(fp_line
+			(start 0.75 1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "485de411-cda0-48b0-b90e-ac61c1e3e5d3")
+		)
+		(fp_line
+			(start -1.8 -1.1)
+			(end 1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ae430563-ad08-4b54-83bf-ec8d82ff184c")
+		)
+		(fp_line
+			(start -1.8 1.1)
+			(end -1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "758034df-6a9f-4051-8e76-b4538ab4d30b")
+		)
+		(fp_line
+			(start 1.8 -1.1)
+			(end 1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1d684c90-e561-4b31-8ee7-db359904330f")
+		)
+		(fp_line
+			(start 1.8 1.1)
+			(end -1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3a4e657a-d2c2-46cd-9a89-88826161cc2f")
+		)
+		(fp_line
+			(start -0.8 -0.8)
+			(end 0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "98784076-1468-4e99-bb06-bbadfc62fdfc")
+		)
+		(fp_line
+			(start -0.8 0.8)
+			(end -0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fe4a413a-da25-499e-aa45-f0f774875590")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4f58e22b-7973-4310-9f85-1e4b2b93ef67")
+		)
+		(fp_line
+			(start -0.2 -0.2)
+			(end -0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a3e1e260-9a1d-4b17-819b-96412d7aea68")
+		)
+		(fp_line
+			(start -0.2 0)
+			(end 0.2 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "26c3a17e-9cd3-4813-808e-da611a230e72")
+		)
+		(fp_line
+			(start 0.2 -0.2)
+			(end 0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a4fe6303-4f12-4f63-a63f-91a9073d5fa7")
+		)
+		(fp_line
+			(start 0.2 0.2)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "158cd608-52d0-43c3-8aa1-7e49b938079f")
+		)
+		(fp_line
+			(start 0.6 0)
+			(end 0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f10beaf7-b4de-4bb1-9d23-b81833bf5b07")
+		)
+		(fp_line
+			(start 0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8be6cc90-4ee3-4253-b334-e8d038fc3133")
+		)
+		(fp_line
+			(start 0.8 0.8)
+			(end -0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "72178bb3-e25f-49ec-989c-03bae4c871b9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "3e0d7159-a0c4-4df4-aac1-d064616fcefd")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 2 "Net-(BT1-+)")
+			(pinfunction "+")
+			(pintype "passive")
+			(uuid "40af7f7f-06bf-4cff-b0f7-75ae48fcf4b6")
+		)
+		(pad "2" smd rect
+			(at 0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 1 "Net-(BT1--)")
+			(pinfunction "-")
+			(pintype "passive")
+			(uuid "d698e0d1-a17d-4679-922c-ab82e2729cab")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_Cree-XQ.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LED_SMD:LED_Cree-XQ_HandSoldering"
+		(layer "F.Cu")
+		(uuid "fe323c19-4388-4637-add7-2c993a1a190d")
+		(at 127.5 108.5)
+		(descr "LED Cree-XQ handsoldering pads http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/XLamp/Data-and-Binning/ds-XQB.pdf")
+		(tags "LED Cree XQ")
+		(property "Reference" "OLED1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "8906e429-e4d2-4a76-b2aa-ef2b6ff7b987")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 2 0)
+			(layer "F.Fab")
+			(uuid "6a424930-7b66-4e0b-901f-2e85a91a0d73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_Cree-XQ_HandSoldering"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4bfcdd30-e5f7-49c4-aa10-e84704110659")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5dd8bcf9-67b7-4745-9154-0bdc26330e27")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "873a7640-2ff2-49bc-92be-8e84e9a012db")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/34af697a-98cc-42f5-b81b-53631c2e4e69")
+		(sheetname "Root")
+		(sheetfile "Lab3.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1.7 -1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e282167c-a6a6-4d78-a266-afc209326164")
+		)
+		(fp_line
+			(start 0.75 -1)
+			(end -1.7 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1645de03-52b0-45c5-b23d-438c03722863")
+		)
+		(fp_line
+			(start 0.75 1)
+			(end -1.7 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9c11f72d-18d4-4359-893c-81bd458e402c")
+		)
+		(fp_line
+			(start -1.8 -1.1)
+			(end 1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7a778f3b-0d6d-44ea-9ee7-d277bc8ed48d")
+		)
+		(fp_line
+			(start -1.8 1.1)
+			(end -1.8 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e0a216f2-ba56-4049-b40e-8a1e1d09e104")
+		)
+		(fp_line
+			(start 1.8 -1.1)
+			(end 1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "25a6305b-1afb-4920-869b-1964edc5d8ee")
+		)
+		(fp_line
+			(start 1.8 1.1)
+			(end -1.8 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "512bc554-d59d-4f95-8b65-fb6168181fee")
+		)
+		(fp_line
+			(start -0.8 -0.8)
+			(end 0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "eddf31f0-8e34-411c-aa8a-a8dcb4e38fdf")
+		)
+		(fp_line
+			(start -0.8 0.8)
+			(end -0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "26db2edb-6ebc-41fd-9d60-255585b3dde4")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2f66f86f-82d2-4c95-99fc-f468af7fd8ed")
+		)
+		(fp_line
+			(start -0.2 -0.2)
+			(end -0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9fe79136-f03a-4135-89bf-86f36a196fc1")
+		)
+		(fp_line
+			(start -0.2 0)
+			(end 0.2 -0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2fecd706-d7fb-428b-a24a-1017b3975767")
+		)
+		(fp_line
+			(start 0.2 -0.2)
+			(end 0.2 0.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "54ed5d3c-513b-42d7-8661-eef810a590c4")
+		)
+		(fp_line
+			(start 0.2 0.2)
+			(end -0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "97c2f5e5-1dc7-4fa6-b092-46bee923ee7d")
+		)
+		(fp_line
+			(start 0.6 0)
+			(end 0.2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e3b110e3-21ed-48fe-b903-31b96f7e7f7a")
+		)
+		(fp_line
+			(start 0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "27e12b7c-2926-4f3a-a81c-f1696477044c")
+		)
+		(fp_line
+			(start 0.8 0.8)
+			(end -0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "74fd6b69-e4d1-44d9-ae36-1f84b843c92f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "72ceca61-83a4-4f3c-9cfa-d3ad81ac0c5d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(uuid "7ccd19ee-7ccf-4eff-8e03-4c9f7a4a31d5")
+		)
+		(pad "2" smd rect
+			(at 0.88 0)
+			(size 1.25 1.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(uuid "9dbd8cb3-1b67-46c5-8690-c047ed945e4a")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_Cree-XQ.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+)

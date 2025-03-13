@@ -1,66 +1,99 @@
+#include <Arduino.h>
+#include <BLEDevice.h>
+#include <BLEServer.h>
+#include <BLEUtils.h>
+#include <BLE2902.h>
 #include <Wire.h>
+#include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 
-#define LED_PIN 9  // Corrected LED pin
-#define I2C_ADDRESS 0x76  // Default address for most BME280 sensors
+#define SERVICE_UUID        "ec23c52d-1e1b-416d-aa74-805c6ce40e8c"
+#define CHARACTERISTIC_UUID "9e9a6659-9757-47a0-aec9-b78b64c21191"
+#define LED_PIN D10
+#define SEALEVELPRESSURE_HPA (1013.25)
+
+BLEServer* pServer = NULL;
+BLECharacteristic* pCharacteristic = NULL;
+bool deviceConnected = false;
+bool oldDeviceConnected = false;
+unsigned long previousMillis = 0;
+const long sensorInterval = 10000;
 
 Adafruit_BME280 bme;
+bool ledOff = false;
+unsigned long ledOffTime = 0;
 
-void i2cScanner() {
-  Serial.println("Scanning I2C bus...");
-  for (byte address = 1; address < 127; address++) {
-    Wire.beginTransmission(address);
-    if (Wire.endTransmission() == 0) {
-      Serial.print("I2C device found at address 0x");
-      Serial.println(address, HEX);
+class MyServerCallbacks : public BLEServerCallbacks {
+    void onConnect(BLEServer* pServer) {
+        deviceConnected = true;
+    };
+
+    void onDisconnect(BLEServer* pServer) {
+        deviceConnected = false;
     }
-  }
-  Serial.println("I2C scan complete.");
-}
+};
 
 void setup() {
-  Serial.begin(115200);
-  pinMode(LED_PIN, OUTPUT);
-  digitalWrite(LED_PIN, HIGH);  // Turn LED on at startup
+    Serial.begin(115200);
+    pinMode(LED_PIN, OUTPUT);
+    digitalWrite(LED_PIN, HIGH);
 
-  Wire.begin();
-  delay(1000);
-
-  // Scan the I2C bus to verify connection
-  i2cScanner();
-
-  // Initialize BME280
-  if (!bme.begin(I2C_ADDRESS)) {
-    Serial.println("⚠️ BME280 sensor not found! Check wiring and I2C address.");
-    while (1) {
-      digitalWrite(LED_PIN, HIGH);
-      delay(200);
-      digitalWrite(LED_PIN, LOW);
-      delay(200); // Rapid LED blinking indicates failure
+    if (!bme.begin(0x76)) {
+        Serial.println("Could not find BME280 sensor!");
+        while (1);
     }
-  } 
 
-  Serial.println("✅ BME280 detected and initialized successfully!");
+    BLEDevice::init("HumiditySensor");
+    pServer = BLEDevice::createServer();
+    pServer->setCallbacks(new MyServerCallbacks());
+    BLEService *pService = pServer->createService(SERVICE_UUID);
+    pCharacteristic = pService->createCharacteristic(
+        CHARACTERISTIC_UUID,
+        BLECharacteristic::PROPERTY_READ |
+        BLECharacteristic::PROPERTY_NOTIFY
+    );
+    pCharacteristic->addDescriptor(new BLE2902());
+    pService->start();
+    BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
+    pAdvertising->addServiceUUID(SERVICE_UUID);
+    pAdvertising->setScanResponse(true);
+    pAdvertising->setMinPreferred(0x06);
+    pAdvertising->setMinPreferred(0x12);
+    BLEDevice::startAdvertising();
+    Serial.println("Waiting for connections...");
 }
 
 void loop() {
-  float temperature = bme.readTemperature();
-  float humidity = bme.readHumidity();
-  float pressure = bme.readPressure() / 100.0F;  // Convert Pa to hPa
+    unsigned long currentMillis = millis();
+    
+    if (currentMillis - previousMillis >= sensorInterval) {
+        float humidity = bme.readHumidity();
+        // Apply calibration here if needed
+        String humidityStr = String(humidity);
+        
+        if (deviceConnected) {
+            pCharacteristic->setValue(humidityStr.c_str());
+            pCharacteristic->notify();
+            digitalWrite(LED_PIN, LOW);
+            ledOff = true;
+            ledOffTime = currentMillis;
+            Serial.println("Notified value: " + humidityStr);
+        }
+        previousMillis = currentMillis;
+    }
 
-  Serial.print("🌡️ Temp: ");
-  Serial.print(temperature);
-  Serial.print(" °C,  💧 Humidity: ");
-  Serial.print(humidity);
-  Serial.print(" %,  ⬇️ Pressure: ");
-  Serial.print(pressure);
-  Serial.println(" hPa");
+    if (ledOff && (currentMillis - ledOffTime >= 500)) {
+        digitalWrite(LED_PIN, HIGH);
+        ledOff = false;
+    }
 
-  // Blink LED every read cycle
-  digitalWrite(LED_PIN, HIGH);
-  delay(500);
-  digitalWrite(LED_PIN, LOW);
-  delay(500);
-
-  delay(5000);  // Read sensor every 5 seconds
+    if (!deviceConnected && oldDeviceConnected) {
+        delay(500);
+        pServer->startAdvertising();
+        Serial.println("Advertising started");
+        oldDeviceConnected = deviceConnected;
+    }
+    if (deviceConnected && !oldDeviceConnected) {
+        oldDeviceConnected = deviceConnected;
+    }
 }
